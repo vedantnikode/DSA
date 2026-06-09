@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x=121;
+    if(x<0){
+        return false;
+    }
+
+    int original=x;
+    int rev=0;
+    // int x=121;
+    while(x>0){
+        int digit=x%10;
+        rev=rev*10 + digit;
+        x=x/10;
+    }
+    if(rev==original){
+        return true;
+    }else{
+        return false;
+    }
+
+    
+
+    
+
+}
+
+
+
