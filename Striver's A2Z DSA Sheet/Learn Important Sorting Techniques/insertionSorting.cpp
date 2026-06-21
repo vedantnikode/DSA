@@ -27,3 +27,8 @@ int main(){
     return 0;
 
 }
+
+
+
+//worst case and the best case for the Time Complexity is O[N^2] 
+//and the Besst case is O[N] when the array is in the ascending order
