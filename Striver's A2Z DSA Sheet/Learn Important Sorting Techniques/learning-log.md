@@ -1,0 +1,5 @@
+- Revised Selection Sort.
+- Revised Bubble Sort.
+- Understood Insertion Sort.
+- Read Recursion basics.
+- Planned Expense Tracker features.
