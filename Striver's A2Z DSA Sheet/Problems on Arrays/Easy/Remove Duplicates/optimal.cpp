@@ -6,6 +6,7 @@ using namespace std;
 class Solution{
 public:
     int removeDuplicate(vector<int>& arr){
+        if(arr.empty())  return 0;
         int i=0;
         for(int j=1; j<arr.size(); j++){
             if (arr[i]!=arr[j]){
