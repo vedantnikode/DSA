@@ -13,7 +13,6 @@ public:
         for(int i=0; i<m; i++){
             freq[arr2[i]]++;
         }
-
         vector<int> Union;
         for(auto& it : freq){
             Union.push_back(it.first);
