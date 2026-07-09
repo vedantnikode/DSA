@@ -4,16 +4,18 @@ using namespace std;
 int MissingNumber(int arr[], int n){
     int num = 1;
     for(int i=0; i<n; i++){
+        int truee = 0;
         for(int j=0; j<n; j++){
-            if(arr[i]==num){
+            if(arr[j]==num){
+                truee = 1;
                 num++;
-            }
-            
+                break;
+            }        
         }
-
-       
+        if (truee==0){
+            return num;
+        }  
     }
-    
 }
 
 int main(){
@@ -21,5 +23,4 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<MissingNumber(arr, n); 
     return 0;
-
 }
