@@ -12,13 +12,16 @@ public:
         int mostmax = 0;
         int maxi=1;
         for(int i=0; i<n; i++){
+            if(arr[i]==arr[i+1]){
+                continue;
+            }
             if (arr[i+1]==arr[i]+1){
                 maxi++;
             }else{
                 maxi=1;
             }
 
-            mostmax = max(mostmax,maxi);
+            mostmax = max(mostmax, maxi);
             
         }
         return mostmax;
@@ -27,7 +30,7 @@ public:
 };
 
 int main(){
-    vector<int> arr = {100, 4, 200, 1, 3, 2, 5};
+    vector<int> arr = {100, 4, 200, 1, 3, 3, 2, 5};
     Solution obj;
 
     cout<<obj.LongestConsecutive(arr);
